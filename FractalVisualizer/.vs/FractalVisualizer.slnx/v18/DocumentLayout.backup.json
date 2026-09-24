@@ -3,7 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal visualizer\\fractalvisualizer\\fractalvisualizer\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal visualizer\\fractalvisualizer\\fractalvisualizer\\classes\\chaosgame.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\chaosgame.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal visualizer\\fractalvisualizer\\fractalvisualizer\\classes\\transformation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\transformation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\fpoint.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\fpoint.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\mathsexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\mathsexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\fractalvisualizer\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
@@ -19,14 +35,63 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ChaosGame.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\ChaosGame.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\ChaosGame.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\ChaosGame.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\ChaosGame.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-09-24T19:52:34.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MathsExpression.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\MathsExpression.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\MathsExpression.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\MathsExpression.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\MathsExpression.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-09-24T19:03:52.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Transformation.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Transformation.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Transformation.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Transformation.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Transformation.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-09-24T19:03:36.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FPoint.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\FPoint.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\FPoint.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\FPoint.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\FPoint.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-09-24T19:03:21.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.vb [Design]",
               "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Form1.vb",
               "RelativeDocumentMoniker": "FractalVisualizer\\Form1.vb",
               "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Form1.vb [Design]",
               "RelativeToolTip": "FractalVisualizer\\Form1.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-09-24T19:02:54.457Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-09-24T19:02:54.457Z"
             }
           ]
         }

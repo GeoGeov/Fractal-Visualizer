@@ -16,7 +16,7 @@
         Dim Y As Double = Point.Y
 
         'Using MathsEvaluator to evaluate the expression
-        Dim TCoords As Double() = Expression.EvaluateExpression(X, Y)
+        Dim TCoords As Double() = Expression.Evaluate(X, Y)
         NewPoint.X = TCoords(0)
         NewPoint.Y = TCoords(1)
 
