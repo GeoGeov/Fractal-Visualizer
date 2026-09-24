@@ -1,5 +1,4 @@
 C:\Users\gggeo\Documents\GitHub\Fractal Visualizer\Fractal Visualizer\Fractal Visualizer\obj\Debug\Fractal Visualizer.vbproj.AssemblyReference.cache
-C:\Users\gggeo\Documents\GitHub\Fractal Visualizer\Fractal Visualizer\Fractal Visualizer\obj\Debug\Fractal_Visualizer.FractalForm.resources
 C:\Users\gggeo\Documents\GitHub\Fractal Visualizer\Fractal Visualizer\Fractal Visualizer\obj\Debug\Fractal_Visualizer.Resources.resources
 C:\Users\gggeo\Documents\GitHub\Fractal Visualizer\Fractal Visualizer\Fractal Visualizer\obj\Debug\Fractal Visualizer.vbproj.GenerateResource.cache
 C:\Users\gggeo\Documents\GitHub\Fractal Visualizer\Fractal Visualizer\Fractal Visualizer\obj\Debug\Fractal Visualizer.vbproj.CoreCompileInputs.cache
