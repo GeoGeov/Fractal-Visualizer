@@ -10,20 +10,19 @@
         Index = i
     End Sub
 
-    Public Function ApplyTransformation(Point As FPoint) As FPoint
-        Dim NewPoint As New FPoint
-        Dim X As Double = Point.X
-        Dim Y As Double = Point.Y
+    Public Function ApplyTransformation(Point As Fpoint) As Fpoint
 
-        'Using MathsEvaluator to evaluate the expression
-        Dim TCoords As Double() = Expression.Evaluate(X, Y)
+        Dim NewPoint As New Fpoint
+
+        Dim TCoords As Double() =
+        Expression.Evaluate(Point.X, Point.Y)
+
         NewPoint.X = TCoords(0)
         NewPoint.Y = TCoords(1)
 
-        'Set Point Function to this functions index
         NewPoint.Transformation = Index
-        NewPoint.Iteration = Point.Iteration + 1
 
         Return NewPoint
+
     End Function
 End Class
