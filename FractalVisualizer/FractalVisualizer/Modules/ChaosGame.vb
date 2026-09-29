@@ -9,9 +9,7 @@
     Public Sub UpdateProbabilities()
 
         TotalProbability =
-            Transformations.Sum(
-                Function(T) T.Probability
-            )
+            Transformations.Sum(Function(T) T.Probability)
 
     End Sub
 

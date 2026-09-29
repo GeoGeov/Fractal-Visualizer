@@ -7,13 +7,13 @@ Module FractalRenderer
     'Add zoom and pan functionality
     'Draw points to a bitmap and then display the bitmap on the form
     'Camera
-    Public Static Class Camera
+    Public Class Camera
         'screen centere co-ords
         'default to 0,0
-        Public X As Double = 0
-        Public Y As Double = 0
+        Public Shared X As Double = 0
+        Public Shared Y As Double = 0
         'default zoom to 1
-        Public Zoom As Double = 1
+        Public Shared Zoom As Double = 1
     End Class
 
     Private Function WorldToScreen(Point As Fpoint, Width As Integer, Height As Integer) As Point

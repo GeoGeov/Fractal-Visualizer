@@ -12,15 +12,13 @@
 
     Public Function ApplyTransformation(Point As Fpoint) As Fpoint
 
-        Dim NewPoint As New Fpoint
+        Dim NewPoint As Fpoint
 
         Dim TCoords As Double() =
         Expression.Evaluate(Point.X, Point.Y)
 
-        NewPoint.X = TCoords(0)
-        NewPoint.Y = TCoords(1)
+        NewPoint = New Fpoint(TCoords(0), TCoords(1), Index, Point.Iteration + 1)
 
-        NewPoint.Transformation = Index
 
         Return NewPoint
 

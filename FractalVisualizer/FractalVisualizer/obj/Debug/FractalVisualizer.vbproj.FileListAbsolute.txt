@@ -2,3 +2,14 @@ C:\Users\gggeo\Documents\GitHub\Fractal Visualizer\FractalVisualizer\FractalVisu
 C:\Users\gggeo\Documents\GitHub\Fractal Visualizer\FractalVisualizer\FractalVisualizer\obj\Debug\FractalVisualizer.Resources.resources
 C:\Users\gggeo\Documents\GitHub\Fractal Visualizer\FractalVisualizer\FractalVisualizer\obj\Debug\FractalVisualizer.vbproj.GenerateResource.cache
 C:\Users\gggeo\Documents\GitHub\Fractal Visualizer\FractalVisualizer\FractalVisualizer\obj\Debug\FractalVisualizer.vbproj.CoreCompileInputs.cache
+C:\Users\gggeo\Documents\GitHub\Fractal-Visualizer\FractalVisualizer\FractalVisualizer\obj\Debug\FractalVisualizer.vbproj.AssemblyReference.cache
+C:\Users\gggeo\Documents\GitHub\Fractal-Visualizer\FractalVisualizer\FractalVisualizer\obj\Debug\FractalVisualizer.Resources.resources
+C:\Users\gggeo\Documents\GitHub\Fractal-Visualizer\FractalVisualizer\FractalVisualizer\obj\Debug\FractalVisualizer.vbproj.GenerateResource.cache
+C:\Users\gggeo\Documents\GitHub\Fractal-Visualizer\FractalVisualizer\FractalVisualizer\obj\Debug\FractalVisualizer.vbproj.CoreCompileInputs.cache
+C:\Users\gggeo\Documents\GitHub\Fractal-Visualizer\FractalVisualizer\FractalVisualizer\bin\Debug\FractalVisualizer.exe.config
+C:\Users\gggeo\Documents\GitHub\Fractal-Visualizer\FractalVisualizer\FractalVisualizer\bin\Debug\FractalVisualizer.exe
+C:\Users\gggeo\Documents\GitHub\Fractal-Visualizer\FractalVisualizer\FractalVisualizer\bin\Debug\FractalVisualizer.pdb
+C:\Users\gggeo\Documents\GitHub\Fractal-Visualizer\FractalVisualizer\FractalVisualizer\bin\Debug\FractalVisualizer.xml
+C:\Users\gggeo\Documents\GitHub\Fractal-Visualizer\FractalVisualizer\FractalVisualizer\obj\Debug\FractalVisualizer.exe
+C:\Users\gggeo\Documents\GitHub\Fractal-Visualizer\FractalVisualizer\FractalVisualizer\obj\Debug\FractalVisualizer.xml
+C:\Users\gggeo\Documents\GitHub\Fractal-Visualizer\FractalVisualizer\FractalVisualizer\obj\Debug\FractalVisualizer.pdb
