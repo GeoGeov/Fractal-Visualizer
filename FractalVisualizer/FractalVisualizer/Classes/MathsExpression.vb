@@ -1,14 +1,26 @@
 ﻿Public Class MathsExpression
-    'Placeholder Class at moment
 
-    Public StringExpression As String
-    Public ParsedExpression As Object ' Placeholder for the parsed expression
-    Sub New(Expression As String)
-        StringExpression = Expression
+    Private ReadOnly Root As Expression
+
+    Public ReadOnly StringExpression As String
+
+    Public Sub New(expression As String)
+
+        StringExpression = expression
+
+        Dim lexer As New Lexer(expression)
+
+        Dim tokens = lexer.GetTokens()
+
+        Dim parser As New PrattParser(tokens)
+
+        Root = parser.Parse()
+
     End Sub
 
-    Function Evaluate(X As Double, Y As Double)
-        'add code to evaluate the expression using X and Y
-        Return {X, Y} 'placeholder return value}
+    Public Function Evaluate(x As Double, y As Double) As Double
+        Return Root.Evaluate(x, y)
+
     End Function
+
 End Class

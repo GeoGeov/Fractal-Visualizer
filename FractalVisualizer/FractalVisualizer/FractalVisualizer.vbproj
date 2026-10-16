@@ -73,6 +73,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Parsing Utils\Expressions\BinaryOperatorExpression.vb" />
+    <Compile Include="Classes\Parsing Utils\Expressions\Expression.vb" />
+    <Compile Include="Classes\Parsing Utils\Expressions\FunctionExpression.vb" />
+    <Compile Include="Classes\Parsing Utils\Expressions\NumberExpression.vb" />
+    <Compile Include="Classes\Parsing Utils\Expressions\UnaryExpression.vb" />
+    <Compile Include="Classes\Parsing Utils\Expressions\VariableExpression.vb" />
+    <Compile Include="Classes\Parsing Utils\PrattParser.vb" />
+    <Compile Include="Classes\Parsing Utils\Tokens + Lexer\Lexer.vb" />
+    <Compile Include="Classes\Parsing Utils\Tokens + Lexer\Token.vb" />
+    <Compile Include="Classes\Parsing Utils\Tokens + Lexer\TokenEnums.vb" />
     <Compile Include="Modules\ChaosGame.vb" />
     <Compile Include="Classes\FPoint.vb" />
     <Compile Include="Classes\MathsExpression.vb" />
@@ -84,7 +94,6 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\ExpressionParser.vb" />
     <Compile Include="Modules\FractalRenderer.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -122,5 +131,6 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

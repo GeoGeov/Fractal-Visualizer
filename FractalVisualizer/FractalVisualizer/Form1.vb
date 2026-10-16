@@ -8,6 +8,7 @@ Public Class Form1
     '===========================================================
 
     Private Points As List(Of Fpoint)
+    Private LastGenerationMessage As String = "Ready"
 
     '===========================================================
     ' CONTROLS
@@ -17,6 +18,9 @@ Public Class Form1
     Private WithEvents ResetButton As New Button()
 
     Private IterationsBox As New NumericUpDown()
+    Private WithEvents XBox As New NumericUpDown()
+    Private WithEvents YBox As New NumericUpDown()
+    Private WithEvents ZoomBox As New NumericUpDown()
 
     Private FractalPicture As New PictureBox()
 
@@ -33,6 +37,25 @@ Public Class Form1
         SetupForm()
         SetupControls()
 
+    End Sub
+
+    '===========================================================
+    ' Camera control events
+    '===========================================================
+
+    Private Sub XBox_ValueChanged(sender As Object, e As EventArgs) Handles XBox.ValueChanged
+        FractalRenderer.Camera.X = Convert.ToDouble(XBox.Value)
+        RenderFractal()
+    End Sub
+
+    Private Sub YBox_ValueChanged(sender As Object, e As EventArgs) Handles YBox.ValueChanged
+        FractalRenderer.Camera.Y = Convert.ToDouble(YBox.Value)
+        RenderFractal()
+    End Sub
+
+    Private Sub ZoomBox_ValueChanged(sender As Object, e As EventArgs) Handles ZoomBox.ValueChanged
+        FractalRenderer.Camera.Zoom = Convert.ToDouble(ZoomBox.Value)
+        RenderFractal()
     End Sub
 
     '===========================================================
@@ -143,22 +166,69 @@ Public Class Form1
 
         Me.Controls.Add(IterationsBox)
 
+        '-------------------------------------------------------
+        ' Camera controls (X, Y, Zoom)
+        '-------------------------------------------------------
+
+        Dim XLabel As New Label()
+        XLabel.Text = "X:"
+        XLabel.ForeColor = Color.White
+        XLabel.AutoSize = True
+        XLabel.Location = New Point(470, 8)
+        Me.Controls.Add(XLabel)
+
+        XBox.DecimalPlaces = 4
+        XBox.Minimum = CDec(-1000)
+        XBox.Maximum = CDec(1000)
+        XBox.Increment = CDec(0.1)
+        XBox.Size = New Size(100, 25)
+        XBox.Location = New Point(470, 24)
+        XBox.Value = CDec(0)
+        Me.Controls.Add(XBox)
+
+        Dim YLabel As New Label()
+        YLabel.Text = "Y:"
+        YLabel.ForeColor = Color.White
+        YLabel.AutoSize = True
+        YLabel.Location = New Point(580, 8)
+        Me.Controls.Add(YLabel)
+
+        YBox.DecimalPlaces = 4
+        YBox.Minimum = CDec(-1000)
+        YBox.Maximum = CDec(1000)
+        YBox.Increment = CDec(0.1)
+        YBox.Size = New Size(100, 25)
+        YBox.Location = New Point(580, 24)
+        YBox.Value = CDec(0)
+        Me.Controls.Add(YBox)
+
+        Dim ZoomLabel As New Label()
+        ZoomLabel.Text = "Zoom:"
+        ZoomLabel.ForeColor = Color.White
+        ZoomLabel.AutoSize = True
+        ZoomLabel.Location = New Point(690, 8)
+        Me.Controls.Add(ZoomLabel)
+
+        ZoomBox.DecimalPlaces = 2
+        ZoomBox.Minimum = CDec(0.01)
+        ZoomBox.Maximum = CDec(100)
+        ZoomBox.Increment = CDec(0.1)
+        ZoomBox.Size = New Size(80, 25)
+        ZoomBox.Location = New Point(690, 24)
+        ZoomBox.Value = CDec(1)
+        Me.Controls.Add(ZoomBox)
+
 
         '-------------------------------------------------------
         ' Status
         '-------------------------------------------------------
 
-        StatusLabel.Text =
-            "Ready"
-
-        StatusLabel.ForeColor =
-            Color.LightGray
-
+        StatusLabel.Text = LastGenerationMessage
+        StatusLabel.ForeColor = Color.LightGray
         StatusLabel.AutoSize = True
-
-        StatusLabel.Location =
-            New Point(470, 28)
-
+        StatusLabel.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        ' Place near the right edge; Anchor keeps it visible when resizing
+        StatusLabel.Location = New Point(Me.ClientSize.Width - 300, 28)
         Me.Controls.Add(StatusLabel)
 
 
@@ -289,11 +359,10 @@ Public Class Form1
             DateTime.Now - StartTime
 
         StatusLabel.Text =
-            "Generated " &
-            Points.Count.ToString("N0") &
-            " points in " &
-            GenerationTime.TotalSeconds.ToString("0.00") &
-            "s"
+            "Generated " & Points.Count.ToString("N0") & " points in " & GenerationTime.TotalSeconds.ToString("0.00") & "s"
+
+        ' Store the generation message so render can combine status reliably
+        LastGenerationMessage = StatusLabel.Text
 
         RenderFractal()
 
@@ -316,19 +385,13 @@ Public Class Form1
 
         End If
 
-        StatusLabel.Text &= " | Rendering..."
-
+        ' Show combined status (generation message) and rendering indicator
+        StatusLabel.Text = LastGenerationMessage & " | Rendering..."
         Application.DoEvents()
 
-        Dim StartTime As DateTime =
-            DateTime.Now
+        Dim StartTime As DateTime = DateTime.Now
 
-        Dim NewBitmap As Bitmap =
-            FractalRenderer.Render(
-                Points,
-                FractalPicture.Width,
-                FractalPicture.Height
-            )
+        Dim NewBitmap As Bitmap = FractalRenderer.Render(Points, FractalPicture.Width, FractalPicture.Height)
 
         Dim OldBitmap As Image =
             FractalPicture.Image
@@ -340,17 +403,10 @@ Public Class Form1
             OldBitmap.Dispose()
         End If
 
-        Dim RenderTime As TimeSpan =
-            DateTime.Now - StartTime
+        Dim RenderTime As TimeSpan = DateTime.Now - StartTime
 
-        StatusLabel.Text =
-            StatusLabel.Text.Replace(
-                " | Rendering...",
-                ""
-            ) &
-            " | Rendered in " &
-            RenderTime.TotalSeconds.ToString("0.00") &
-            "s"
+        ' Update status to show only one generation line and the latest render time
+        StatusLabel.Text = LastGenerationMessage & " | Rendered in " & RenderTime.TotalSeconds.ToString("0.00") & "s"
 
     End Sub
 
@@ -369,6 +425,15 @@ Public Class Form1
         FractalRenderer.Camera.Y = 0
         FractalRenderer.Camera.Zoom = 1
 
+        ' Reset UI controls for camera
+        Try
+            XBox.Value = CDec(0)
+            YBox.Value = CDec(0)
+            ZoomBox.Value = CDec(1)
+        Catch
+            ' ignore if controls not yet initialized
+        End Try
+
         Dim OldBitmap As Image =
             FractalPicture.Image
 
@@ -378,7 +443,8 @@ Public Class Form1
             OldBitmap.Dispose()
         End If
 
-        StatusLabel.Text = "Ready"
+        LastGenerationMessage = "Ready"
+        StatusLabel.Text = LastGenerationMessage
 
     End Sub
 

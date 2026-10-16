@@ -1,12 +1,22 @@
 ﻿Public Class Transformation
     'Temp Vals
-    Public Expression As MathsExpression
+    Public TXExpression As MathsExpression
+    Public TYExpression As MathsExpression
     Public Probability As Double
     Public Index As Integer
 
-    Public Sub New(TExpression As String, RelativeProbability As Double, i As Integer)
+    Public Sub New(TempExpression As String, RelativeProbability As Double, i As Integer)
         Probability = RelativeProbability
-        Expression = New MathsExpression(TExpression)
+        'Expect expression in form "<x expression>, <y expression>"
+        Dim parts = TempExpression.Split({","c}, 2)
+        If parts.Length = 2 Then
+            TXExpression = New MathsExpression(parts(0).Trim())
+            TYExpression = New MathsExpression(parts(1).Trim())
+        Else
+            'If only one expression provided, use it for both coordinates
+            TXExpression = New MathsExpression(TempExpression)
+            TYExpression = New MathsExpression(TempExpression)
+        End If
         Index = i
     End Sub
 
@@ -14,10 +24,10 @@
 
         Dim NewPoint As Fpoint
 
-        Dim TCoords As Double() =
-        Expression.Evaluate(Point.X, Point.Y)
+        Dim x As Double = TXExpression.Evaluate(Point.X, Point.Y)
+        Dim y As Double = TYExpression.Evaluate(Point.X, Point.Y)
 
-        NewPoint = New Fpoint(TCoords(0), TCoords(1), Index, Point.Iteration + 1)
+        NewPoint = New Fpoint(x, y, Index, Point.Iteration + 1)
 
 
         Return NewPoint
