@@ -261,30 +261,10 @@ Public Class Form1
 
 
         'Temp Transformations added to definition
-        ChaosGame.Transformations.Add(
-    New Transformation(
-        "0.5*x - 0.5, 0.5*y",
-        1,
-        0
-    )
-)
-
-        ChaosGame.Transformations.Add(
-    New Transformation(
-        "0.5*x + 0.5, 0.5*y",
-        1,
-        1
-    )
-)
-
-        ChaosGame.Transformations.Add(
-    New Transformation(
-        "0.5*x, 0.5*y + 0.5",
-        1,
-        2
-    )
-)
-
+        'starts as sierpinski triangle rn.
+        ChaosGame.Transformations.Add(New Transformation("0.5 * x + 0.5, 0.5 * y", 1, 0))
+        ChaosGame.Transformations.Add(New Transformation("0.5 * x - 0.5, 0.5 * y", 1, 1))
+        ChaosGame.Transformations.Add(New Transformation("0.5 * x, 0.5 * y + 0.5", 1, 2))
         ChaosGame.UpdateProbabilities()
 
     End Sub

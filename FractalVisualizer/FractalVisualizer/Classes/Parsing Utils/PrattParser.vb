@@ -24,7 +24,7 @@ Public Class PrattParser
 
 
     Private Function Current() As Token
-        ' Defensive: if position is past the end, return an EOF token
+        'if position is past the end, return an EOF token
         If Position < Tokens.Count Then
             Return Tokens(Position)
         End If
@@ -82,7 +82,7 @@ Public Class PrattParser
             Case TokenType.Power
                 Return 30
             Case Else
-                Return 0
+                Return -1
 
         End Select
 
@@ -98,19 +98,43 @@ Public Class PrattParser
                 Return New NumberExpression(token.NumberValue)
 
             Case TokenType.Identifier
-                'if the identifier is followed by a left parenthesis, it's a function call
                 If Current().Type = TokenType.LeftParen Then
+                    'Consume '('
                     Advance()
-                    'recursively parse the argument of the function 
-                    Dim argument = ParseExpression(0)
+
+                    Dim arguments As New List(Of Expression)
+
+                    'Allow zero arguments, e.g. random()
                     If Current().Type <> TokenType.RightParen Then
-                        Throw New Exception("Expected ')' after function.")
+
+                        arguments.Add(ParseExpression(0))
+
+                        'Parse additional comma-separated arguments
+                        While Current().Type = TokenType.Comma
+
+                            Advance() 'Consume comma
+
+                            arguments.Add(ParseExpression(0))
+
+                        End While
+
                     End If
+
+                    'Require closing ')'
+                    If Current().Type <> TokenType.RightParen Then
+                        Throw New Exception(
+                "Expected ')' after function arguments.")
+                    End If
+
                     Advance()
-                    Return New FunctionExpression(token.Text, argument)
+
+                    Return New FunctionExpression(
+            token.Text,
+            arguments)
 
                 End If
 
+                'If the identifier is not followed by a '(', treat it as a variable
                 Return New VariableExpression(token.Text)
 
             Case TokenType.Plus, TokenType.Minus

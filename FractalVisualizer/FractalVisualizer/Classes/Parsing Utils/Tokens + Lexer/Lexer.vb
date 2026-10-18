@@ -51,6 +51,7 @@ Public Class Lexer
             End If
 
             Select Case ch
+                'c specifies a character
                 Case "+"c
                     Tokens.Add(New Token(TokenType.Plus, ch.ToString()))
                 Case "-"c
