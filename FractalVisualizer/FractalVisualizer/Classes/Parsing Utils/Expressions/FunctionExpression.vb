@@ -78,7 +78,11 @@
                 RequireArgumentCount(3)
                 Return Math.Max(values(0), Math.Min(values(1), values(2)))
 
-            Case "rnd", "random"
+            Case "sign"
+                RequireArgumentCount(1)
+                Return Math.Sign(values(0))
+
+            Case "rnd", "random", "rand"
 #Region "random"
                 If values.Count = 0 Then
                     Return NextRandom()

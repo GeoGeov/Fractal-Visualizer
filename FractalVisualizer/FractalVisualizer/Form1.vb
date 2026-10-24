@@ -258,13 +258,12 @@ Public Class Form1
 
         ResizePictureBox()
 
-
-
         'Temp Transformations added to definition
         'starts as sierpinski triangle rn.
-        ChaosGame.Transformations.Add(New Transformation("0.5 * x + 0.5, 0.5 * y", 1, 0))
-        ChaosGame.Transformations.Add(New Transformation("0.5 * x - 0.5, 0.5 * y", 1, 1))
-        ChaosGame.Transformations.Add(New Transformation("0.5 * x, 0.5 * y + 0.5", 1, 2))
+        TransformationPresets.Load()
+
+        ChaosGame.Transformations.Add(New Transformation("sign(rnd(-1,1)) * (x*sin(x) + 0.5* y *cos(y)) $ x*cos(x) + y *sin(y)", 0.5, 3))
+
         ChaosGame.UpdateProbabilities()
 
     End Sub

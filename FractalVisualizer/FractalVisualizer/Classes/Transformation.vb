@@ -8,7 +8,7 @@
     Public Sub New(TempExpression As String, RelativeProbability As Double, i As Integer)
         Probability = RelativeProbability
         'Expect expression in form "x, y"
-        Dim parts = TempExpression.Split({","c}, 2)
+        Dim parts = TempExpression.Split({"$"c}, 2)
         If parts.Length = 2 Then
             TXExpression = New MathsExpression(parts(0).Trim())
             TYExpression = New MathsExpression(parts(1).Trim())

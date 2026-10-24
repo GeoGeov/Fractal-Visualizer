@@ -1,34 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\",
+  "WorkspaceRootPath": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal visualizer\\fractalvisualizer\\fractalvisualizer\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal-visualizer\\fractalvisualizer\\fractalvisualizer\\modules\\fractalgenerator.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\modules\\fractalgenerator.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal-visualizer\\fractalvisualizer\\fractalvisualizer\\modules\\fractalcontroller.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\modules\\fractalcontroller.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal-visualizer\\fractalvisualizer\\fractalvisualizer\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal visualizer\\fractalvisualizer\\fractalvisualizer\\classes\\parsing utils\\expressions\\binaryoperatorexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\parsing utils\\expressions\\binaryoperatorexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\parsing utils\\expressions\\functionexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\parsing utils\\expressions\\functionexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\parsing utils\\expressions\\functionexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\fractalvisualizer\\modules\\fractalrenderer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\modules\\fractalrenderer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\parsing utils\\expressions\\binaryoperatorexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\parsing utils\\expressions\\binaryoperatorexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\parsing utils\\prattparser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\parsing utils\\prattparser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\parsing utils\\expressions\\expression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\parsing utils\\expressions\\expression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\parsing utils\\tokens \u002B lexer\\lexer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\parsing utils\\expressions\\unaryexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\parsing utils\\expressions\\unaryexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\parsing utils\\tokens \u002B lexer\\lexer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\parsing utils\\tokens \u002B lexer\\lexer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\parsing utils\\tokens \u002B lexer\\token.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\parsing utils\\tokens \u002B lexer\\token.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\parsing utils\\prattparser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\parsing utils\\prattparser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\mathsexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\mathsexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\parsing utils\\expressions\\variableexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\parsing utils\\expressions\\variableexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\parsing utils\\expressions\\numberexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\parsing utils\\expressions\\numberexpression.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,20 +58,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.vb",
-              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Form1.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Form1.vb",
               "RelativeDocumentMoniker": "FractalVisualizer\\Form1.vb",
-              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Form1.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Form1.vb",
               "RelativeToolTip": "FractalVisualizer\\Form1.vb",
-              "ViewState": "AgIAAPEAAAAAAAAAAAAUwAgBAABZAAAAAAAAAA==",
+              "ViewState": "AgIAAP4AAAAAFKj1ZWgdwAsBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-09-29T08:43:55.968Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FractalGenerator.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Modules\\FractalGenerator.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Modules\\FractalGenerator.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Modules\\FractalGenerator.vb*",
+              "RelativeToolTip": "FractalVisualizer\\Modules\\FractalGenerator.vb*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-23T08:02:33.117Z",
               "EditorCaption": ""
             },
             {
@@ -69,80 +102,123 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BinaryOperatorExpression.vb",
-              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\BinaryOperatorExpression.vb",
-              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\BinaryOperatorExpression.vb",
-              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\BinaryOperatorExpression.vb",
-              "RelativeToolTip": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\BinaryOperatorExpression.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAgAAAAAAAAAA==",
+              "Title": "FractalController.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Modules\\FractalController.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Modules\\FractalController.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Modules\\FractalController.vb",
+              "RelativeToolTip": "FractalVisualizer\\Modules\\FractalController.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-18T17:43:12.964Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FunctionExpression.vb",
-              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\FunctionExpression.vb",
-              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\FunctionExpression.vb",
-              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\FunctionExpression.vb",
-              "RelativeToolTip": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\FunctionExpression.vb",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAvwBMAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-17T09:54:34.036Z",
+              "WhenOpened": "2026-10-23T07:55:53.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FractalRenderer.vb",
-              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Modules\\FractalRenderer.vb",
-              "RelativeDocumentMoniker": "FractalVisualizer\\Modules\\FractalRenderer.vb",
-              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Modules\\FractalRenderer.vb",
-              "RelativeToolTip": "FractalVisualizer\\Modules\\FractalRenderer.vb",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBkAAAAMAAAAAAAAAA==",
+              "Title": "FunctionExpression.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\FunctionExpression.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\FunctionExpression.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\FunctionExpression.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\FunctionExpression.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwIgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-16T10:39:56.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-21T10:46:25.915Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PrattParser.vb",
-              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\PrattParser.vb",
-              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Parsing Utils\\PrattParser.vb",
-              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\PrattParser.vb",
-              "RelativeToolTip": "FractalVisualizer\\Classes\\Parsing Utils\\PrattParser.vb",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAowIkAAAA5AAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Lexer.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Tokens \u002B Lexer\\Lexer.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Parsing Utils\\Tokens \u002B Lexer\\Lexer.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Tokens \u002B Lexer\\Lexer.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Parsing Utils\\Tokens \u002B Lexer\\Lexer.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-16T10:23:04.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-21T10:43:00.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PrattParser.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\PrattParser.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Parsing Utils\\PrattParser.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\PrattParser.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Parsing Utils\\PrattParser.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-21T10:40:47.428Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Token.vb",
-              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Tokens \u002B Lexer\\Token.vb",
-              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Parsing Utils\\Tokens \u002B Lexer\\Token.vb",
-              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Tokens \u002B Lexer\\Token.vb",
-              "RelativeToolTip": "FractalVisualizer\\Classes\\Parsing Utils\\Tokens \u002B Lexer\\Token.vb",
+              "Title": "UnaryExpression.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\UnaryExpression.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\UnaryExpression.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\UnaryExpression.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\UnaryExpression.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-16T10:26:17.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-21T10:35:14.209Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Lexer.vb",
-              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Tokens \u002B Lexer\\Lexer.vb",
-              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Parsing Utils\\Tokens \u002B Lexer\\Lexer.vb",
-              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Tokens \u002B Lexer\\Lexer.vb",
-              "RelativeToolTip": "FractalVisualizer\\Classes\\Parsing Utils\\Tokens \u002B Lexer\\Lexer.vb",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwDUAAAAoAAAAAAAAAA==",
+              "Title": "Expression.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\Expression.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\Expression.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\Expression.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\Expression.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-10-16T10:25:05.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-21T10:34:58.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BinaryOperatorExpression.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\BinaryOperatorExpression.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\BinaryOperatorExpression.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\BinaryOperatorExpression.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\BinaryOperatorExpression.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-21T10:35:05.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MathsExpression.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\MathsExpression.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\MathsExpression.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\MathsExpression.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\MathsExpression.vb",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-21T10:39:06.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VariableExpression.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\VariableExpression.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\VariableExpression.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\VariableExpression.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\VariableExpression.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-21T10:35:15.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NumberExpression.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\NumberExpression.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\NumberExpression.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\NumberExpression.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Parsing Utils\\Expressions\\NumberExpression.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-21T10:35:12.321Z"
             }
           ]
         }

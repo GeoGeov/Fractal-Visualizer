@@ -94,7 +94,10 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Modules\FractalController.vb" />
+    <Compile Include="Modules\FractalGenerator.vb" />
     <Compile Include="Modules\FractalRenderer.vb" />
+    <Compile Include="Modules\Presets.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
