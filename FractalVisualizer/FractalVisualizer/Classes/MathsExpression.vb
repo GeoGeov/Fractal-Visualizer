@@ -9,11 +9,10 @@
         StringExpression = expression
 
         Dim lexer As New Lexer(expression)
-
         Dim tokens = lexer.GetTokens()
-
         Dim parser As New PrattParser(tokens)
 
+        'on creation, parse the expression and store the root node for evaluation
         Root = parser.Parse()
 
     End Sub

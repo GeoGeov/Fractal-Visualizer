@@ -1,6 +1,4 @@
-﻿Imports System.Linq.Expressions
-
-Public Class PrattParser
+﻿Public Class PrattParser
     Private ReadOnly Tokens As List(Of Token)
     Private Position As Integer
 

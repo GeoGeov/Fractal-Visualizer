@@ -23,7 +23,7 @@
             values.Add(argument.Evaluate(x, y))
         Next
 
-        'long ass case to evaluate the function based on its name
+        'long case to evaluate the function based on its name
         'prolly a better way to do this 
         Select Case Name
 
@@ -120,9 +120,7 @@
         'checks args
         'if wrong cries about it
         If Arguments.Count <> expected Then
-            Throw New ArgumentException(
-                Name & " requires " & expected &
-                " argument(s).")
+            Throw New ArgumentException(Name & " requires " & expected & " argument(s).")
         End If
 
     End Sub

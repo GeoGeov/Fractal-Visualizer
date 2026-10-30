@@ -73,6 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Camera.vb" />
     <Compile Include="Classes\Parsing Utils\Expressions\BinaryOperatorExpression.vb" />
     <Compile Include="Classes\Parsing Utils\Expressions\Expression.vb" />
     <Compile Include="Classes\Parsing Utils\Expressions\FunctionExpression.vb" />
@@ -83,21 +84,23 @@
     <Compile Include="Classes\Parsing Utils\Tokens + Lexer\Lexer.vb" />
     <Compile Include="Classes\Parsing Utils\Tokens + Lexer\Token.vb" />
     <Compile Include="Classes\Parsing Utils\Tokens + Lexer\TokenEnums.vb" />
-    <Compile Include="Modules\ChaosGame.vb" />
+    <Compile Include="Classes\PointStorage.vb" />
+    <Compile Include="Classes\Viewport.vb" />
+    <Compile Include="Statics\ChaosGame.vb" />
     <Compile Include="Classes\FPoint.vb" />
     <Compile Include="Classes\MathsExpression.vb" />
     <Compile Include="Classes\Transformation.vb" />
-    <Compile Include="Form1.vb">
+    <Compile Include="Statics\Ui Elements\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
+    <Compile Include="Statics\Ui Elements\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\FractalController.vb" />
-    <Compile Include="Modules\FractalGenerator.vb" />
-    <Compile Include="Modules\FractalRenderer.vb" />
-    <Compile Include="Modules\Presets.vb" />
+    <Compile Include="Statics\Fractal Control\FractalController.vb" />
+    <Compile Include="Statics\Fractal Control\FractalGenerator.vb" />
+    <Compile Include="Statics\Fractal Control\FractalRenderer.vb" />
+    <Compile Include="Statics\Presets.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -112,6 +115,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Statics\Ui Elements\FractalDisplay.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statics\Ui Elements\TransformationEditor.vb">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

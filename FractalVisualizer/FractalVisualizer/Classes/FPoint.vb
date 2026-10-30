@@ -8,20 +8,12 @@
     Public Iteration As Integer
 
     'To instatiate a new point with all values
-    Public Sub New(X As Double, Y As Double, Transformation As Integer, Iteration As Integer)
+    Public Sub New(X As Double, Y As Double, Optional Transformation As Integer = -1, Optional Iteration As Integer = 0)
 
         Me.X = X
         Me.Y = Y
         Me.Transformation = Transformation
         Me.Iteration = Iteration
 
-    End Sub
-
-    'Use for initial point generation
-    Public Sub New(X As Double, Y As Double)
-        Me.X = X
-        Me.Y = Y
-        Me.Transformation = -1
-        Me.Iteration = 0
     End Sub
 End Class

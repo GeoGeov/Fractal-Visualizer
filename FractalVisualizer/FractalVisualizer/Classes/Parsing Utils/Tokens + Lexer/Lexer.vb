@@ -1,6 +1,4 @@
-﻿Imports System.Text.RegularExpressions
-
-Public Class Lexer
+﻿Public Class Lexer
     Private ReadOnly Text As String
     Private Position As Integer
     Private ReadOnly Tokens As List(Of Token)
