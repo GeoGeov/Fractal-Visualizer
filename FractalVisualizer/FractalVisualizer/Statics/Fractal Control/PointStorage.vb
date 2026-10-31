@@ -7,7 +7,7 @@
 
     'the maximum number of points to store, can be adjusted based on performance needs
     'should be adjustable from ui
-    Public Property MaxPoints As Integer = 500000
+    Public Property MaxPoints As Integer = 5000000
 
     'return the number of points currently stored
     Public ReadOnly Property Count As Integer

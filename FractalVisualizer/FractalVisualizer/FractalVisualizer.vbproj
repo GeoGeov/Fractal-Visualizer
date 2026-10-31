@@ -84,7 +84,7 @@
     <Compile Include="Classes\Parsing Utils\Tokens + Lexer\Lexer.vb" />
     <Compile Include="Classes\Parsing Utils\Tokens + Lexer\Token.vb" />
     <Compile Include="Classes\Parsing Utils\Tokens + Lexer\TokenEnums.vb" />
-    <Compile Include="Classes\PointStorage.vb" />
+    <Compile Include="Statics\Fractal Control\PointStorage.vb" />
     <Compile Include="Classes\Viewport.vb" />
     <Compile Include="Statics\ChaosGame.vb" />
     <Compile Include="Classes\FPoint.vb" />

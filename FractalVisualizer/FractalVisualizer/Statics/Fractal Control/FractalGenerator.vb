@@ -1,6 +1,5 @@
 ﻿
 Imports System.Threading
-Imports System.Threading.Tasks
 
 Public Class FractalGenerator
 

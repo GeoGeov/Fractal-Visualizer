@@ -82,6 +82,18 @@
                 RequireArgumentCount(1)
                 Return Math.Sign(values(0))
 
+            Case "floor", "flr"
+                RequireArgumentCount(1)
+                Return Math.Floor(values(0))
+
+            Case "ceil", "ceiling"
+                RequireArgumentCount(1)
+                Return Math.Ceiling(values(0))
+
+            Case "round"
+                RequireArgumentCount(1)
+                Return Math.Round(values(0))
+
             Case "rnd", "random", "rand"
 #Region "random"
                 If values.Count = 0 Then

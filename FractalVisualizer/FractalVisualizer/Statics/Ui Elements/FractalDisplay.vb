@@ -1,8 +1,4 @@
-﻿
-Imports System.Drawing
-Imports System.Drawing.Drawing2D
-Imports System.Threading.Tasks
-Imports System.Windows.Forms
+﻿Imports System.Drawing.Drawing2D
 
 Public Class FractalDisplay
     Inherits UserControl
