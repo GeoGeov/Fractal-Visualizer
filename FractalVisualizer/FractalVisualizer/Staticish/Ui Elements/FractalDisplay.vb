@@ -1,4 +1,5 @@
-﻿Imports System.Drawing.Drawing2D
+﻿
+Imports System.Drawing.Drawing2D
 
 Public Class FractalDisplay
     Inherits UserControl
@@ -20,6 +21,8 @@ Public Class FractalDisplay
 
     Private StatisticsTickCounter As Integer = 0
 
+    'Extra space retained around the viewport.
+    Public Property ViewportMargin As Double = 0.2
     Public Property TargetVisiblePoints As Integer = 100000
 
     Public Event CameraChanged As EventHandler
@@ -85,7 +88,11 @@ Public Class FractalDisplay
         CurrentController = controller
 
         If CurrentController IsNot Nothing Then
+
             CurrentController.InvalidateRenderer()
+
+            RequestViewportDetail()
+
         End If
 
         RefreshDisplay()
@@ -177,6 +184,7 @@ Public Class FractalDisplay
         If CurrentController Is Nothing Then Return
 
         CurrentController.InvalidateRenderer()
+
         RefreshDisplay()
 
         RequestViewportDetail()
@@ -187,12 +195,15 @@ Public Class FractalDisplay
     ' VIEWPORT CALCULATION
     ' =========================================================
 
-    Private Function GetViewportBounds() As ViewportBounds
+    'Returns the actual visible viewport in fractal coordinates.
+    Public Function GetViewportBounds() As ViewportBounds
 
         If CurrentController Is Nothing Then
+
             Throw New InvalidOperationException(
                 "No controller is attached."
             )
+
         End If
 
         Dim width As Double =
@@ -202,9 +213,11 @@ Public Class FractalDisplay
             FractalPicture.ClientSize.Height
 
         If width <= 0 OrElse height <= 0 Then
+
             Throw New InvalidOperationException(
                 "Display dimensions must be positive."
             )
+
         End If
 
         Dim camera = CurrentController.Camera
@@ -237,26 +250,41 @@ Public Class FractalDisplay
 
     End Function
 
+    'Returns the viewport with an additional margin.
+    Private Function GetExpandedViewportBounds() As ViewportBounds
+
+        Return GetViewportBounds().Expand(ViewportMargin)
+
+    End Function
+
     ' =========================================================
-    ' VIEWPORT DETAIL REQUESTS
+    ' VIEWPORT UPDATES
     ' =========================================================
-    Public Async Function GenerateViewportNowAsync() As Task
+
+    'Updates PointStorage without restarting the generator.
+    Public Sub UpdateGenerationViewport()
 
         If CurrentController Is Nothing Then Return
 
-        DetailTimer.Stop()
+        Try
 
-        Dim viewport As ViewportBounds =
-        GetViewportBounds()
+            Dim viewport As ViewportBounds =
+                GetExpandedViewportBounds()
 
-        Await CurrentController.Generator.GenerateViewportAsync(
-        TargetVisiblePoints,
-        viewport
-    )
+            CurrentController.UpdateViewport(viewport)
 
-        RefreshDisplay()
+            RefreshDisplay()
 
-    End Function
+        Catch ex As InvalidOperationException
+
+            'Can occur during resizing when dimensions are invalid.
+            Return
+
+        End Try
+
+    End Sub
+
+    'Schedules a viewport update after camera movement.
     Private Sub RequestViewportDetail()
 
         If CurrentController Is Nothing Then Return
@@ -266,13 +294,30 @@ Public Class FractalDisplay
 
     End Sub
 
+    'Retained for compatibility with your existing Form1 code.
     Public Sub GenerateCurrentViewportDetail()
 
         RequestViewportDetail()
 
     End Sub
 
-    Private Async Sub DetailTimer_Tick(
+    'Retained for compatibility with callers of the old method.
+    'This no longer generates a separate viewport sample.
+    Public Function GenerateViewportNowAsync() As Task
+
+        If CurrentController Is Nothing Then
+            Return Task.CompletedTask
+        End If
+
+        DetailTimer.Stop()
+
+        UpdateGenerationViewport()
+
+        Return Task.CompletedTask
+
+    End Function
+
+    Private Sub DetailTimer_Tick(
         sender As Object,
         e As EventArgs
     )
@@ -281,29 +326,7 @@ Public Class FractalDisplay
 
         If CurrentController Is Nothing Then Return
 
-        Try
-
-            Dim viewport As ViewportBounds =
-                GetViewportBounds()
-
-            Await CurrentController.Generator.GenerateViewportAsync(
-                TargetVisiblePoints,
-                viewport
-            )
-
-        Catch ex As OperationCanceledException
-
-            ' Expected when a newer request replaces the current one.
-
-        Catch ex As Exception
-
-            Debug.WriteLine(
-                "Viewport generation error: " & ex.Message
-            )
-
-        End Try
-
-        RefreshDisplay()
+        UpdateGenerationViewport()
 
     End Sub
 
@@ -402,6 +425,7 @@ Public Class FractalDisplay
         If CurrentController IsNot Nothing Then
 
             CurrentController.InvalidateRenderer()
+
             RefreshDisplay()
 
             RequestViewportDetail()
@@ -438,7 +462,7 @@ Public Class FractalDisplay
            Double.IsNaN(oldScale) OrElse
            Double.IsInfinity(oldScale) Then Return
 
-        ' World coordinate underneath the mouse.
+        'World coordinate underneath the mouse.
         Dim worldX As Double =
             camera.X + (e.X - width / 2.0) / oldScale
 
@@ -462,7 +486,7 @@ Public Class FractalDisplay
 
         If newScale <= 0 Then Return
 
-        ' Keep the world coordinate under the mouse stationary.
+        'Keep the world coordinate under the mouse stationary.
         camera.X =
             worldX - (e.X - width / 2.0) / newScale
 
@@ -495,10 +519,16 @@ Public Class FractalDisplay
 
         If CurrentController Is Nothing Then Return 0
 
-        Dim viewport As ViewportBounds =
-            GetViewportBounds()
+        Dim viewport As ViewportBounds
 
-        Dim points As Fpoint() =
+        Try
+            viewport = GetViewportBounds()
+        Catch ex As InvalidOperationException
+            Return 0
+        End Try
+
+        'GetSnapshot returns List(Of Fpoint), not an array.
+        Dim points As List(Of Fpoint) =
             CurrentController.Store.GetSnapshot()
 
         Dim count As Integer = 0

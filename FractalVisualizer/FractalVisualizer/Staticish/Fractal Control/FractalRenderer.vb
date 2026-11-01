@@ -4,14 +4,18 @@ Imports System.Runtime.InteropServices
 Public Class FractalRenderer
     Implements IDisposable
 
-    Public Property Surface As Bitmap
-
+#Region "Private Fields"
     Private LastSeenTotal As Long = -1
     Private NeedsFullRedraw As Boolean = True
 
     Private ReadOnly ViewCamera As Camera
 
     Private Const PointArgb As Integer = &HFF000000
+#End Region
+
+    'i want to be private but made public for ease
+    Public Property Surface As Bitmap
+
 
     Public Sub New(camera As Camera)
         ViewCamera = camera
@@ -22,40 +26,50 @@ Public Class FractalRenderer
     End Sub
 
     Public Function Update(
-        store As PointStorage,
-        width As Integer,
-        height As Integer
-    ) As Bitmap
+    store As PointStorage,
+    width As Integer,
+    height As Integer
+) As Bitmap
 
         If width <= 0 OrElse height <= 0 Then Return Nothing
 
         Dim sizeChanged As Boolean =
-            Surface Is Nothing OrElse
-            Surface.Width <> width OrElse
-            Surface.Height <> height
+        Surface Is Nothing OrElse
+        Surface.Width <> width OrElse
+        Surface.Height <> height
 
         If sizeChanged Then
+
             If Surface IsNot Nothing Then
                 Surface.Dispose()
             End If
 
             Surface = New Bitmap(
-                width,
-                height,
-                PixelFormat.Format32bppArgb
-            )
+            width,
+            height,
+            PixelFormat.Format32bppArgb
+        )
 
             NeedsFullRedraw = True
+
         End If
 
         Dim rebuildRequired As Boolean = False
+        Dim latestTotal As Long = 0
 
-        Dim changedPoints As Fpoint() =
-            store.GetChanges(LastSeenTotal, rebuildRequired)
+        Dim changedPoints As List(Of Fpoint) =
+        store.GetChanges(
+            LastSeenTotal,
+            rebuildRequired,
+            latestTotal
+        )
 
         If NeedsFullRedraw OrElse rebuildRequired Then
 
-            Dim allPoints As Fpoint() = store.GetSnapshot()
+            Dim snapshotTotal As Long
+
+            Dim allPoints As List(Of Fpoint) =
+            store.GetSnapshot(snapshotTotal)
 
             Using g As Graphics = Graphics.FromImage(Surface)
                 g.Clear(Color.White)
@@ -63,25 +77,33 @@ Public Class FractalRenderer
 
             PlotPoints(allPoints, width, height)
 
+            LastSeenTotal = snapshotTotal
             NeedsFullRedraw = False
 
-        ElseIf changedPoints IsNot Nothing AndAlso
-               changedPoints.Length > 0 Then
+        Else
 
-            PlotPoints(changedPoints, width, height)
+            If changedPoints IsNot Nothing AndAlso
+           changedPoints.Count > 0 Then
+
+                PlotPoints(changedPoints, width, height)
+
+            End If
+
+            LastSeenTotal = latestTotal
 
         End If
 
         Return Surface
+
     End Function
 
     Private Sub PlotPoints(
-        points As Fpoint(),
+        points As List(Of Fpoint),
         width As Integer,
         height As Integer
     )
 
-        If points Is Nothing OrElse points.Length = 0 Then Return
+        If points Is Nothing OrElse points.Count = 0 Then Return
 
         Dim rect As New Rectangle(0, 0, width, height)
 

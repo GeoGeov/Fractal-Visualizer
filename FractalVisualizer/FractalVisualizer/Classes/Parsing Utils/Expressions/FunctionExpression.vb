@@ -26,7 +26,7 @@
         'long case to evaluate the function based on its name
         'prolly a better way to do this 
         Select Case Name
-
+#Region "trig functions"
             Case "sin"
                 RequireArgumentCount(1)
                 Return Math.Sin(values(0))
@@ -49,7 +49,7 @@
             Case "arctan", "atan"
                 RequireArgumentCount(1)
                 Return Math.Atan(values(0))
-
+#End Region
             Case "sqrt"
                 RequireArgumentCount(1)
                 Return Math.Sqrt(values(0))
@@ -65,7 +65,7 @@
             Case "log", "ln"
                 RequireArgumentCount(1)
                 Return Math.Log(values(0))
-
+#Region "min/max/clamp/sign/floor/ceil/round"
             Case "min"
                 RequireArgumentCount(2)
                 Return Math.Min(values(0), values(1))
@@ -93,9 +93,11 @@
             Case "round"
                 RequireArgumentCount(1)
                 Return Math.Round(values(0))
+#End Region
 
-            Case "rnd", "random", "rand"
 #Region "random"
+            Case "rnd", "random", "rand"
+
                 If values.Count = 0 Then
                     Return NextRandom()
                 End If

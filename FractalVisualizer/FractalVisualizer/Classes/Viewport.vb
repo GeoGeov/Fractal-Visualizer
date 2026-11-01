@@ -1,34 +1,45 @@
-﻿
-Public Structure ViewportBounds
+﻿Public Structure ViewportBounds
 
-    Public Left As Double
-    Public Right As Double
-    Public Top As Double
-    Public Bottom As Double
+    Public Property Left As Double
+    Public Property Right As Double
+    Public Property Top As Double
+    Public Property Bottom As Double
 
-    Public Sub New(
-        leftValue As Double,
-        rightValue As Double,
-        topValue As Double,
-        bottomValue As Double
-    )
-
+    Public Sub New(leftValue As Double, rightValue As Double, topValue As Double, bottomValue As Double)
         Left = leftValue
         Right = rightValue
         Top = topValue
         Bottom = bottomValue
-
     End Sub
 
     Public Function Contains(point As Fpoint) As Boolean
-
         If point Is Nothing Then Return False
 
-        Return (point.X >= Left AndAlso
+        'if in true
+        Return point.X >= Left AndAlso
                point.X <= Right AndAlso
                point.Y >= Bottom AndAlso
-               point.Y <= Top)
+               point.Y <= Top
+
+    End Function
+
+    Public Function Expand(margin As Double) As ViewportBounds
+        'returns a new ViewportBounds that is expanded by the specified margin on all sides.
+
+        Dim width As Double = Right - Left
+        Dim height As Double = Top - Bottom
+
+        Dim marginX As Double = width * margin
+        Dim marginY As Double = height * margin
+
+        Return New ViewportBounds(
+            Left - marginX,
+            Right + marginX,
+            Top + marginY,
+            Bottom - marginY
+        )
 
     End Function
 
 End Structure
+

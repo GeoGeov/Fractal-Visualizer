@@ -1,4 +1,6 @@
 ﻿Public Module TransformationPresets
+    'was used previously
+    'want to repurpose this for presets
 
     Public Sub Load()
         ChaosGame.Transformations.Clear()

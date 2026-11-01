@@ -84,23 +84,23 @@
     <Compile Include="Classes\Parsing Utils\Tokens + Lexer\Lexer.vb" />
     <Compile Include="Classes\Parsing Utils\Tokens + Lexer\Token.vb" />
     <Compile Include="Classes\Parsing Utils\Tokens + Lexer\TokenEnums.vb" />
-    <Compile Include="Statics\Fractal Control\PointStorage.vb" />
+    <Compile Include="Staticish\Fractal Control\PointStorage.vb" />
     <Compile Include="Classes\Viewport.vb" />
-    <Compile Include="Statics\ChaosGame.vb" />
+    <Compile Include="Staticish\ChaosGame.vb" />
     <Compile Include="Classes\FPoint.vb" />
     <Compile Include="Classes\MathsExpression.vb" />
     <Compile Include="Classes\Transformation.vb" />
-    <Compile Include="Statics\Ui Elements\Form1.vb">
+    <Compile Include="Staticish\Ui Elements\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Statics\Ui Elements\Form1.Designer.vb">
+    <Compile Include="Staticish\Ui Elements\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Statics\Fractal Control\FractalController.vb" />
-    <Compile Include="Statics\Fractal Control\FractalGenerator.vb" />
-    <Compile Include="Statics\Fractal Control\FractalRenderer.vb" />
-    <Compile Include="Statics\Presets.vb" />
+    <Compile Include="Staticish\Fractal Control\FractalController.vb" />
+    <Compile Include="Staticish\Fractal Control\FractalGenerator.vb" />
+    <Compile Include="Staticish\Fractal Control\FractalRenderer.vb" />
+    <Compile Include="Staticish\Presets.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -116,10 +116,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Statics\Ui Elements\FractalDisplay.vb">
+    <Compile Include="Staticish\Ui Elements\FractalDisplay.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Statics\Ui Elements\TransformationEditor.vb">
+    <Compile Include="Staticish\Ui Elements\TransformationEditor.vb">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

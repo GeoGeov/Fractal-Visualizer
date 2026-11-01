@@ -437,80 +437,52 @@
     e As EventArgs
 )
 
-        If IsClosing Then Return
+        TransformationEditorView.ApplyTransformations()
+
+        FractalView.UpdateGenerationViewport()
+
+        GenerateButton.Enabled = False
+        StopButton.Enabled = True
 
         Try
 
-            TransformationEditorView.ApplyTransformations()
+            Await Controller.StartContinuousAsync()
 
-            GenerateButton.Enabled = False
-            StatusLabel.Text = "Generating initial points..."
-
-            ' Start a fresh chaos-game sequence.
-            ' This also clears the existing point storage.
-            Await Controller.Generator.GenerateAsync(100000)
-
-            FractalView.RefreshDisplay()
-
-            StatusLabel.Text = "Generating viewport detail..."
-
-            ' Request additional points in the current viewport.
-            Await FractalView.GenerateViewportNowAsync()
-
-            StatusLabel.Text = "Viewport generation complete"
-
-        Catch ex As OperationCanceledException
-
-            StatusLabel.Text = "Generation stopped"
+            StatusLabel.Text = "Generating..."
 
         Catch ex As Exception
 
-            StatusLabel.Text = "Generation error"
+            StatusLabel.Text = "Generation failed: " & ex.Message
 
-            MessageBox.Show(
-            ex.Message,
-            "Generation error",
-            MessageBoxButtons.OK,
-            MessageBoxIcon.Error
-        )
-
-        Finally
-
-            GenerateButton.Enabled = Not IsClosing
-
-            UpdatePointStatistics(
-            Nothing,
-            EventArgs.Empty
-        )
+            GenerateButton.Enabled = True
+            StopButton.Enabled = False
 
         End Try
 
     End Sub
-
     Private Async Sub StopButton_Click(
-        sender As Object,
-        e As EventArgs
-    )
+    sender As Object,
+    e As EventArgs
+)
 
-        If IsClosing Then Return
+        StopButton.Enabled = False
+        StatusLabel.Text = "Stopping generation..."
 
         Try
             Await Controller.StopGenerationAsync()
-            StatusLabel.Text = "Generation stopped"
 
         Catch ex As Exception
             MessageBox.Show(
-                ex.Message,
-                "Stop error",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Error
-            )
+            "Error stopping generation: " & ex.Message
+        )
+
+        Finally
+            GenerateButton.Enabled = True
+            StopButton.Enabled = False
+            StatusLabel.Text = "Generation stopped"
         End Try
 
-        UpdatePointStatistics(Nothing, EventArgs.Empty)
-
     End Sub
-
     Private Async Sub ResetButton_Click(
         sender As Object,
         e As EventArgs
