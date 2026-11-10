@@ -1,10 +1,8 @@
-﻿
-Imports System.Drawing.Drawing2D
+﻿Imports System.Drawing.Drawing2D
 
 Public Class FractalDisplay
     Inherits UserControl
-
-    Public FractalPicture As PictureBox
+#Region "Private Fields"
 
     Private DisplayTimer As Windows.Forms.Timer
     Private DetailTimer As Windows.Forms.Timer
@@ -20,14 +18,20 @@ Public Class FractalDisplay
     Private PreviewOffsetY As Single = 0
 
     Private StatisticsTickCounter As Integer = 0
+#End Region
 
+#Region "Public Properties"
+    Public FractalPicture As PictureBox
     'Extra space retained around the viewport.
     Public Property ViewportMargin As Double = 0.2
     Public Property TargetVisiblePoints As Integer = 100000
 
     Public Event CameraChanged As EventHandler
     Public Event StatisticsUpdated As EventHandler
+#End Region
 
+    'initializes elements and sets up event handlers. 
+    'ideally move relevant handlers to end of function
     Public Sub New()
 
         Me.Dock = DockStyle.Fill
@@ -79,10 +83,6 @@ Public Class FractalDisplay
 
     End Sub
 
-    ' =========================================================
-    ' CONTROLLER
-    ' =========================================================
-
     Public Sub AttachController(controller As FractalController)
 
         CurrentController = controller
@@ -99,10 +99,7 @@ Public Class FractalDisplay
 
     End Sub
 
-    ' =========================================================
-    ' DISPLAY
-    ' =========================================================
-
+#Region "Display Refresh"
     Public Sub RefreshDisplay()
 
         If CurrentController Is Nothing Then Return
@@ -190,11 +187,9 @@ Public Class FractalDisplay
         RequestViewportDetail()
 
     End Sub
+#End Region
 
-    ' =========================================================
-    ' VIEWPORT CALCULATION
-    ' =========================================================
-
+#Region "Viewport"
     'Returns the actual visible viewport in fractal coordinates.
     Public Function GetViewportBounds() As ViewportBounds
 
@@ -256,10 +251,6 @@ Public Class FractalDisplay
         Return GetViewportBounds().Expand(ViewportMargin)
 
     End Function
-
-    ' =========================================================
-    ' VIEWPORT UPDATES
-    ' =========================================================
 
     'Updates PointStorage without restarting the generator.
     Public Sub UpdateGenerationViewport()
@@ -330,10 +321,10 @@ Public Class FractalDisplay
 
     End Sub
 
-    ' =========================================================
-    ' MOUSE FOCUS
-    ' =========================================================
+#End Region
 
+#Region "Mouse Control"
+    'Determines if the mouse is currently over the fractal display.
     Private Sub FractalPicture_MouseEnter(
         sender As Object,
         e As EventArgs
@@ -343,10 +334,7 @@ Public Class FractalDisplay
 
     End Sub
 
-    ' =========================================================
-    ' PANNING
-    ' =========================================================
-
+    'Mouse Pan/Drag logic
     Private Sub FractalPicture_MouseDown(
         sender As Object,
         e As MouseEventArgs
@@ -365,7 +353,6 @@ Public Class FractalDisplay
         FractalPicture.Capture = True
 
     End Sub
-
     Private Sub FractalPicture_MouseMove(
         sender As Object,
         e As MouseEventArgs
@@ -406,7 +393,6 @@ Public Class FractalDisplay
         )
 
     End Sub
-
     Private Sub FractalPicture_MouseUp(
         sender As Object,
         e As MouseEventArgs
@@ -434,10 +420,7 @@ Public Class FractalDisplay
 
     End Sub
 
-    ' =========================================================
-    ' ZOOMING
-    ' =========================================================
-
+    'Mouse Wheel Zoom logic
     Private Sub FractalPicture_MouseWheel(
         sender As Object,
         e As MouseEventArgs
@@ -510,10 +493,7 @@ Public Class FractalDisplay
         RequestViewportDetail()
 
     End Sub
-
-    ' =========================================================
-    ' STATISTICS
-    ' =========================================================
+#End Region
 
     Public Function GetVisiblePointCount() As Integer
 
@@ -528,12 +508,12 @@ Public Class FractalDisplay
         End Try
 
         'GetSnapshot returns List(Of Fpoint), not an array.
-        Dim points As List(Of Fpoint) =
+        Dim points As List(Of FPoint) =
             CurrentController.Store.GetSnapshot()
 
         Dim count As Integer = 0
 
-        For Each point As Fpoint In points
+        For Each point As FPoint In points
 
             If viewport.Contains(point) Then
                 count += 1
@@ -544,11 +524,6 @@ Public Class FractalDisplay
         Return count
 
     End Function
-
-    ' =========================================================
-    ' DISPOSAL
-    ' =========================================================
-
     Protected Overrides Sub Dispose(disposing As Boolean)
 
         If disposing Then

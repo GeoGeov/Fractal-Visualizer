@@ -57,7 +57,7 @@ Public Class FractalRenderer
         Dim rebuildRequired As Boolean = False
         Dim latestTotal As Long = 0
 
-        Dim changedPoints As List(Of Fpoint) =
+        Dim changedPoints As List(Of FPoint) =
         store.GetChanges(
             LastSeenTotal,
             rebuildRequired,
@@ -68,7 +68,7 @@ Public Class FractalRenderer
 
             Dim snapshotTotal As Long
 
-            Dim allPoints As List(Of Fpoint) =
+            Dim allPoints As List(Of FPoint) =
             store.GetSnapshot(snapshotTotal)
 
             Using g As Graphics = Graphics.FromImage(Surface)
@@ -98,7 +98,7 @@ Public Class FractalRenderer
     End Function
 
     Private Sub PlotPoints(
-        points As List(Of Fpoint),
+        points As List(Of FPoint),
         width As Integer,
         height As Integer
     )
@@ -124,7 +124,7 @@ Public Class FractalRenderer
             Dim centreX As Double = width / 2.0
             Dim centreY As Double = height / 2.0
 
-            For Each p As Fpoint In points
+            For Each p As FPoint In points
                 If p Is Nothing Then Continue For
 
                 Dim sx As Double =

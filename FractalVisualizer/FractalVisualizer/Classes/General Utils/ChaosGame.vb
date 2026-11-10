@@ -14,7 +14,7 @@
 
     End Sub
 
-    Public Function GeneratePoint(StartingPoint As Fpoint) As Fpoint
+    Public Function GeneratePoint(StartingPoint As FPoint) As FPoint
 
         Dim RandomValue As Double = RNG.NextDouble() * TotalProbability
         Dim CumulativeProbability As Double = 0
@@ -32,12 +32,12 @@
     End Function
 
 
-    Public Function GeneratePoints(StartingPoint As Fpoint, NumberOfIterations As Integer) As List(Of Fpoint)
+    Public Function GeneratePoints(StartingPoint As FPoint, NumberOfIterations As Integer) As List(Of FPoint)
         'leftover from old architecture
         'left incase needed
 
-        Dim Points As New List(Of Fpoint)
-        Dim CurrentPoint As Fpoint = StartingPoint
+        Dim Points As New List(Of FPoint)
+        Dim CurrentPoint As FPoint = StartingPoint
 
         For i As Integer = 1 To NumberOfIterations
             CurrentPoint = GeneratePoint(CurrentPoint)

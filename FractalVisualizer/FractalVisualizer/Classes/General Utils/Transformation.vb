@@ -20,14 +20,14 @@
         Index = i
     End Sub
 
-    Public Function ApplyTransformation(Point As Fpoint) As Fpoint
+    Public Function ApplyTransformation(Point As FPoint) As FPoint
 
-        Dim NewPoint As Fpoint
+        Dim NewPoint As FPoint
 
         Dim x As Double = TXExpression.Evaluate(Point.X, Point.Y)
         Dim y As Double = TYExpression.Evaluate(Point.X, Point.Y)
 
-        NewPoint = New Fpoint(x, y, Index, Point.Iteration + 1)
+        NewPoint = New FPoint(x, y, Index, Point.Iteration + 1)
 
 
         Return NewPoint

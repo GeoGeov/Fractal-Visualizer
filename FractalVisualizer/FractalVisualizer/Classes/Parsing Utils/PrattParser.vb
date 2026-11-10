@@ -20,7 +20,6 @@
 
     End Function
 
-
     Private Function Current() As Token
         'if position is past the end, return an EOF token
         If Position < Tokens.Count Then

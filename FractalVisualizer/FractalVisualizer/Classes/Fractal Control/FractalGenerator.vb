@@ -9,7 +9,7 @@ Public Class FractalGenerator
     'semaphoreSlim is used instead of a lock to allow async/await.
     Private ReadOnly LifecycleLock As New SemaphoreSlim(1, 1)
 
-    Public Property CurrentPoint As Fpoint
+    Public Property CurrentPoint As FPoint
     Private _totalGenerated As Long = 0
 
 #End Region
@@ -17,7 +17,7 @@ Public Class FractalGenerator
 #Region "Public Properties"
     'public as may be edited by the user at runtime later on.
     Public Property BatchSize As Integer = 1000
-    Public Property BatchDelayMilliseconds As Decimal = 1
+    Public Property BatchDelayMilliseconds As Decimal = 0.01
 
 
     Public ReadOnly Property TotalGenerated As Long
@@ -49,15 +49,14 @@ Public Class FractalGenerator
         Store.UpdateViewport(viewport)
     End Sub
 
-
 #Region "Generation Methods"
     'Finite methods
     'Single point generation
-    Private Sub GenerateNextPoint(batch As List(Of Fpoint))
+    Private Sub GenerateNextPoint(batch As List(Of FPoint))
 
         ' Use the existing chaos-game algorithm to select and
         ' apply the next transformation.
-        Dim newPoint As Fpoint =
+        Dim newPoint As FPoint =
             ChaosGame.GeneratePoint(CurrentPoint)
 
         If newPoint Is Nothing Then
@@ -107,7 +106,7 @@ Public Class FractalGenerator
 
             Store.Clear()
 
-            CurrentPoint = New Fpoint(startX, startY)
+            CurrentPoint = New FPoint(startX, startY)
             Interlocked.Exchange(_totalGenerated, 0)
 
             Cancellation = New CancellationTokenSource()
@@ -159,7 +158,7 @@ Public Class FractalGenerator
         token As CancellationToken
     ) As Task
 
-        Dim batch As New List(Of Fpoint)(BatchSize)
+        Dim batch As New List(Of FPoint)(BatchSize)
 
         For i As Integer = 1 To numberOfPoints
 
@@ -202,7 +201,7 @@ Public Class FractalGenerator
 
             Store.Clear()
 
-            CurrentPoint = New Fpoint(startX, startY)
+            CurrentPoint = New FPoint(startX, startY)
 
             Interlocked.Exchange(_totalGenerated, 0)
 
@@ -225,7 +224,7 @@ Public Class FractalGenerator
         token As CancellationToken
     ) As Task
 
-        Dim batch As New List(Of Fpoint)(BatchSize)
+        Dim batch As New List(Of FPoint)(BatchSize)
 
         Try
 

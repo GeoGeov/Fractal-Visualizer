@@ -1,5 +1,4 @@
 ﻿Public Structure ViewportBounds
-
     Public Property Left As Double
     Public Property Right As Double
     Public Property Top As Double

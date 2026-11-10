@@ -10,7 +10,7 @@ Public Class TransformationEditor
 
     Public Sub New()
         BuildInterface()
-        LoadSierpinskiPreset()
+        LoadPreset()
 
     End Sub
 
@@ -120,10 +120,12 @@ Public Class TransformationEditor
     End Sub
 
     Private Sub PresetButton_Click(sender As Object, e As EventArgs)
-        LoadSierpinskiPreset()
+        LoadPreset()
     End Sub
 
-    Public Sub LoadSierpinskiPreset()
+    Public Sub LoadPreset()
+        'edit to use preset class
+
         FunctionGrid.Rows.Clear()
         FunctionGrid.Rows.Add(0, "0.5 * x + 0.5 $ 0.5 * y", "1")
         FunctionGrid.Rows.Add(1, "0.5 * x - 0.5 $ 0.5 * y", "1")
@@ -204,5 +206,4 @@ Public Class TransformationEditor
         ChaosGame.UpdateProbabilities()
 
     End Sub
-
 End Class

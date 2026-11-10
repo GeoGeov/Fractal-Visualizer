@@ -1,19 +1,17 @@
 ﻿Public Class FractalController
     Implements IDisposable
-
+#Region "Properties"
     Public ReadOnly Property Store As PointStorage
     Public ReadOnly Property Generator As FractalGenerator
     Public ReadOnly Property Camera As Camera
     Public ReadOnly Property Renderer As FractalRenderer
 
     Private IsDisposed As Boolean = False
+#End Region
 
     Public Sub New(Optional maxPoints As Integer = 500000)
 
-        Store = New PointStorage With {
-            .MaxPoints = maxPoints
-        }
-
+        Store = New PointStorage With {.MaxPoints = maxPoints}
         Camera = New Camera()
         Generator = New FractalGenerator(Store)
         Renderer = New FractalRenderer(Camera)
@@ -27,11 +25,11 @@
         If IsDisposed Then Return
 
         Generator.UpdateViewport(viewport)
-
         Renderer.Invalidate()
 
     End Sub
 
+#Region "Generation Control"
     'Starts a finite generation session.
     Public Async Function GenerateAsync(pointCount As Integer) As Task
 
@@ -81,18 +79,17 @@
 
     End Function
 
+#End Region
+
+#Region "Rendering Control"
     'Renders the current stored points.
-    Public Function Render(
-        width As Integer,
-        height As Integer
-    ) As Bitmap
+    Public Function Render(width As Integer, height As Integer) As Bitmap
 
         If IsDisposed Then Return Nothing
 
         Return Renderer.Update(Store, width, height)
 
     End Function
-
     Public Sub InvalidateRenderer()
 
         If IsDisposed Then Return
@@ -100,6 +97,7 @@
         Renderer.Invalidate()
 
     End Sub
+#End Region
 
     Public Sub Dispose() Implements IDisposable.Dispose
 

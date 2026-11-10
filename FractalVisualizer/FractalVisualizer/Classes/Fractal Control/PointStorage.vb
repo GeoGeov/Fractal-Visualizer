@@ -1,6 +1,6 @@
 ﻿Public Class PointStorage
 #Region "Private Fields"
-    Private ReadOnly Points As New List(Of Fpoint)
+    Private ReadOnly Points As New List(Of FPoint)
     Private ReadOnly PointSequences As New List(Of Long)
     Private ReadOnly PointsLock As New Object
 
@@ -75,13 +75,13 @@
 
 #Region "Point Control"
     'called by generator to add a batch of points to the storage.
-    Public Sub AddBatch(batch As List(Of Fpoint))
+    Public Sub AddBatch(batch As List(Of FPoint))
 
         If batch Is Nothing OrElse batch.Count = 0 Then Return
 
         SyncLock PointsLock
 
-            For Each point As Fpoint In batch
+            For Each point As FPoint In batch
 
                 If Not IsValidPoint(point) Then Continue For
 
@@ -121,7 +121,7 @@
 
             For readIndex As Integer = 0 To Points.Count - 1
 
-                Dim point As Fpoint = Points(readIndex)
+                Dim point As FPoint = Points(readIndex)
 
                 If Not CurrentViewport.Contains(point) AndAlso
                removed < excess Then
@@ -166,7 +166,7 @@
 
     End Sub
 
-    Private Function IsValidPoint(point As Fpoint) As Boolean
+    Private Function IsValidPoint(point As FPoint) As Boolean
 
         If point Is Nothing Then Return False
 
@@ -200,27 +200,27 @@
 #Region "Snapshots"
     'allows the renderer to get a snapshot of the current points without locking the storage for an extended period.
     'one version returns the current total number of points, the other does not.
-    Public Function GetSnapshot() As List(Of Fpoint)
+    Public Function GetSnapshot() As List(Of FPoint)
 
         SyncLock PointsLock
-            Return New List(Of Fpoint)(Points)
+            Return New List(Of FPoint)(Points)
         End SyncLock
 
     End Function
-    Public Function GetSnapshot(ByRef latestTotal As Long) As List(Of Fpoint)
+    Public Function GetSnapshot(ByRef latestTotal As Long) As List(Of FPoint)
 
         SyncLock PointsLock
 
             latestTotal = _totalAdded
 
-            Return New List(Of Fpoint)(Points)
+            Return New List(Of FPoint)(Points)
 
         End SyncLock
 
     End Function
 
     'provides a snapshot of what has changed since the last render, and whether a full redraw is required.
-    Public Function GetChanges(lastSeenTotal As Long, ByRef rebuildRequired As Boolean, ByRef latestTotal As Long) As List(Of Fpoint)
+    Public Function GetChanges(lastSeenTotal As Long, ByRef rebuildRequired As Boolean, ByRef latestTotal As Long) As List(Of FPoint)
 
         SyncLock PointsLock
             latestTotal = _totalAdded
@@ -229,10 +229,10 @@
             'if rebuild is required, we don't need to return any changes, since the renderer will redraw everything anyway.
             If rebuildRequired Then
                 _requiresFullRedraw = False
-                Return New List(Of Fpoint)
+                Return New List(Of FPoint)
             End If
 
-            Dim changes As New List(Of Fpoint)
+            Dim changes As New List(Of FPoint)
 
             ' Binary search for the first point greater than lastSeenTotal in PointSequences.
 #Region "Binary Search"

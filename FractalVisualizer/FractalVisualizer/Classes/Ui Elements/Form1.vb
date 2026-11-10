@@ -1,18 +1,18 @@
 ﻿Public Class Form1
-
+#Region "UI Elements"
     Private Controller As FractalController
 
     Private MainSplit As SplitContainer
     Private SettingsLayout As TableLayoutPanel
     Private SettingsTop As Panel
 
-    Private GenerateButton As Button
-    Private StopButton As Button
-    Private ResetButton As Button
+    Private WithEvents GenerateButton As Button
+    Private WithEvents StopButton As Button
+    Private WithEvents ResetButton As Button
 
-    Private XBox As NumericUpDown
-    Private YBox As NumericUpDown
-    Private ZoomBox As NumericUpDown
+    Private WithEvents XBox As NumericUpDown
+    Private WithEvents YBox As NumericUpDown
+    Private WithEvents ZoomBox As NumericUpDown
 
     Private PointsGeneratedLabel As Label
     Private MaxPointsLabel As Label
@@ -20,19 +20,18 @@
     Private StatusLabel As Label
 
     Private TransformationEditorView As TransformationEditor
-    Private FractalView As FractalDisplay
+    Private WithEvents FractalView As FractalDisplay
 
-    Private StatisticsTimer As Windows.Forms.Timer
+    Private WithEvents StatisticsTimer As Timer
     Private UpdatingCameraControls As Boolean = False
     Private IsClosing As Boolean = False
 
-    Public Sub New()
+#End Region
 
+    Public Sub New()
         InitializeComponent()
 
-        AddHandler Me.Resize, AddressOf Form1_Resize
-
-        ' The UI is built entirely in code.
+        ' The UI built in code.
         Me.Controls.Clear()
 
         Me.Text = "Chaos Game Fractal Visualizer"
@@ -55,10 +54,6 @@
         AddHandler FractalView.StatisticsUpdated,
             AddressOf UpdatePointStatistics
 
-        AddHandler XBox.ValueChanged, AddressOf Camera_Changed
-        AddHandler YBox.ValueChanged, AddressOf Camera_Changed
-        AddHandler ZoomBox.ValueChanged, AddressOf Camera_Changed
-
         AddHandler GenerateButton.Click, AddressOf GenerateButton_Click
         AddHandler StopButton.Click, AddressOf StopButton_Click
         AddHandler ResetButton.Click, AddressOf ResetButton_Click
@@ -72,17 +67,10 @@
 
         StatisticsTimer.Start()
 
-        AddHandler Me.FormClosing,
-            AddressOf Form1_FormClosing
-
         SyncCameraControls()
         UpdatePointStatistics(Nothing, EventArgs.Empty)
 
     End Sub
-
-    ' =========================================================
-    ' Main interface
-    ' =========================================================
 
     Private Sub BuildInterface()
 
@@ -156,9 +144,7 @@
 
     End Sub
 
-    ' =========================================================
-    ' Top controls
-    ' =========================================================
+#Region "Top controls"
 
     Private Sub BuildTopControls()
 
@@ -350,18 +336,12 @@
 
     End Sub
 
-    ' =========================================================
-    ' Camera synchronisation
-    ' =========================================================
+#End Region
 
-    Private Sub Camera_Changed(
-    sender As Object,
-    e As EventArgs
-)
+#Region "Camera handling"
+    Private Sub Camera_Changed(sender As Object, e As EventArgs) Handles XBox.ValueChanged, YBox.ValueChanged, ZoomBox.ValueChanged
 
-        If UpdatingCameraControls OrElse
-       Controller Is Nothing OrElse
-       IsClosing Then Return
+        If UpdatingCameraControls OrElse Controller Is Nothing OrElse IsClosing Then Return
 
         Controller.Camera.X = CDbl(XBox.Value)
         Controller.Camera.Y = CDbl(YBox.Value)
@@ -427,11 +407,9 @@
         Return value
 
     End Function
+#End Region
 
-    ' =========================================================
-    ' Generation controls
-    ' =========================================================
-
+#Region "Generation control"
     Private Async Sub GenerateButton_Click(
     sender As Object,
     e As EventArgs
@@ -510,41 +488,18 @@
         UpdatePointStatistics(Nothing, EventArgs.Empty)
 
     End Sub
+#End Region
 
-    ' =========================================================
-    ' Statistics
-    ' =========================================================
-
-    Private Sub UpdatePointStatistics(
-        sender As Object,
-        e As EventArgs
-    )
-
+    Private Sub UpdatePointStatistics(sender As Object, e As EventArgs)
         If IsClosing OrElse Controller Is Nothing Then Return
-
-        PointsGeneratedLabel.Text =
-    "Points generated: " &
-    Controller.Generator.TotalGenerated.ToString("N0")
-
-        MaxPointsLabel.Text =
-            "Maximum stored: " &
-            Controller.Store.MaxPoints.ToString("N0")
-
-        PointsOnScreenLabel.Text =
-            "Points on screen: " &
-            FractalView.GetVisiblePointCount().ToString("N0")
-
+        PointsGeneratedLabel.Text = "Points generated: " & Controller.Generator.TotalGenerated.ToString("N0")
+        MaxPointsLabel.Text = "Maximum stored: " & Controller.Store.MaxPoints.ToString("N0")
+        PointsOnScreenLabel.Text = "Points on screen: " & FractalView.GetVisiblePointCount().ToString("N0")
     End Sub
 
-    ' =========================================================
-    ' Cleanup
-    ' =========================================================
+#Region "Form events"
 
-    Private Async Sub Form1_FormClosing(
-        sender As Object,
-        e As FormClosingEventArgs
-    )
-
+    Private Async Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         If IsClosing Then Return
 
         IsClosing = True
@@ -566,8 +521,7 @@
         End Try
 
     End Sub
-
-    Private Sub Form1_Resize(sender As Object, e As EventArgs)
+    Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
 
         If FractalView Is Nothing OrElse Controller Is Nothing Then Return
 
@@ -575,4 +529,6 @@
         FractalView.RefreshDisplay()
 
     End Sub
+
+#End Region
 End Class
