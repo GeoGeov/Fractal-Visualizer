@@ -17,7 +17,7 @@ Public Class FractalGenerator
 #Region "Public Properties"
     'public as may be edited by the user at runtime later on.
     Public Property BatchSize As Integer = 1000
-    Public Property BatchDelayMilliseconds As Decimal = 0.01
+    Public Property BatchDelayMilliseconds As Integer = 1
 
 
     Public ReadOnly Property TotalGenerated As Long

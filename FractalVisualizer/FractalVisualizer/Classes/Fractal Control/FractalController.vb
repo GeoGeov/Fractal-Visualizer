@@ -5,6 +5,8 @@
     Public ReadOnly Property Generator As FractalGenerator
     Public ReadOnly Property Camera As Camera
     Public ReadOnly Property Renderer As FractalRenderer
+    Public ReadOnly Property Colouring As ColouringManager
+
 
     Private IsDisposed As Boolean = False
 #End Region
@@ -13,8 +15,14 @@
 
         Store = New PointStorage With {.MaxPoints = maxPoints}
         Camera = New Camera()
+        Colouring = New ColouringManager()
+
+        'Add a default colouring layer to the manager.
+        'temporary, for testing purposes.
+        Colouring.AddLayer(New TransformationColouring())
+
         Generator = New FractalGenerator(Store)
-        Renderer = New FractalRenderer(Camera)
+        Renderer = New FractalRenderer(Camera, Colouring)
 
     End Sub
 
@@ -83,13 +91,15 @@
 
 #Region "Rendering Control"
     'Renders the current stored points.
-    Public Function Render(width As Integer, height As Integer) As Bitmap
+    Public Sub Render(width As Integer, height As Integer)
 
-        If IsDisposed Then Return Nothing
+        If IsDisposed Then Return
 
-        Return Renderer.Update(Store, width, height)
+        If Renderer Is Nothing Then Return
 
-    End Function
+        Renderer.RequestRender(Store, width, height)
+
+    End Sub
     Public Sub InvalidateRenderer()
 
         If IsDisposed Then Return
@@ -110,6 +120,8 @@
         Generator.StopAsync().GetAwaiter().GetResult()
 
         Renderer.Dispose()
+
+        Colouring.Dispose()
 
     End Sub
 

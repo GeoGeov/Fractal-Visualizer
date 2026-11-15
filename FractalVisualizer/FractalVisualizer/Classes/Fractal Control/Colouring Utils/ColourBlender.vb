@@ -159,13 +159,12 @@ Public Class ColourBlender
                 blended = Math.Max(0.0, back - front)
             Case BlendMode.Multiply
                 blended = back * front
-
             Case Else
                 Throw New ArgumentOutOfRangeException(NameOf(blendMode))
         End Select
 
         ' Composite the blended colour over the background.
-        Dim result As Double = (blended * frontAlpha + back * backAlpha * (1.0 - frontAlpha)) / resultAlpha
+        Dim result As Double = (back * backAlpha * (1.0 - frontAlpha) + front * frontAlpha * (1.0 - backAlpha) + blended * backAlpha * frontAlpha) / resultAlpha
 
         Return Clamp(CInt(Math.Round(result * 255)), 0, 255)
 

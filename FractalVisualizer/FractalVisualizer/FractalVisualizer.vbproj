@@ -73,15 +73,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Fractal Control\Colouring Utils\BitmapWriter.vb" />
     <Compile Include="Classes\Fractal Control\Colouring Utils\BlendMode.vb" />
     <Compile Include="Classes\Fractal Control\Colouring Utils\ColourBlender.vb" />
     <Compile Include="Classes\Fractal Control\Colouring Utils\ColourContext.vb" />
-    <Compile Include="Classes\Fractal Control\Colouring Utils\ColourControl.vb" />
-    <Compile Include="Classes\Fractal Control\Colouring Utils\ColouringAlgorithm.vb" />
+    <Compile Include="Classes\Fractal Control\Colouring Utils\ColourManager.vb" />
+    <Compile Include="Classes\Fractal Control\Colouring Utils\ColouringAlgorithms\ColouringAlgorithm.vb" />
     <Compile Include="Classes\Fractal Control\Colouring Utils\ColouringAlgorithms\DensityColouring.vb" />
-    <Compile Include="Classes\Fractal Control\Colouring Utils\ColouringAlgorithms\FunctionColouring.vb" />
+    <Compile Include="Classes\Fractal Control\Colouring Utils\ColouringAlgorithms\TransformationColouring.vb" />
     <Compile Include="Classes\Fractal Control\Colouring Utils\ColouringAlgorithms\IterationColouring.vb" />
     <Compile Include="Classes\Fractal Control\Colouring Utils\ColourLayer.vb" />
+    <Compile Include="Classes\Fractal Control\Colouring Utils\ColourMap.vb" />
+    <Compile Include="Classes\General Utils\Events.vb" />
     <Compile Include="Classes\General Utils\Presets.vb" />
     <Compile Include="Classes\ViewUtils\Camera.vb" />
     <Compile Include="Classes\Parsing Utils\Expressions\BinaryOperatorExpression.vb" />

@@ -1,36 +1,61 @@
 ﻿Public Class ColourLayer
     Implements IDisposable
 
-    Public Property Algorithm As ColouringAlgorithm
-    'normal by default
-    Public Property BlendMode As BlendMode = BlendMode.Normal
+    Private tAlgorithm As ColouringAlgorithm
+    Private CachedBitmap As Bitmap
+
+    Public Property BlendMode As BlendMode =
+        BlendMode.Normal
+
     Public Property Enabled As Boolean = True
 
-    Private cachedBitmap As Bitmap
+    Public Property Algorithm As ColouringAlgorithm
+        Get
+            Return tAlgorithm
+        End Get
+
+        Set(value As ColouringAlgorithm)
+            If value Is Nothing Then
+                Throw New ArgumentNullException(NameOf(value))
+            End If
+            If tAlgorithm Is value Then Return
+
+            tAlgorithm = value
+            Invalidate()
+
+        End Set
+
+    End Property
 
     Public Sub New(algorithm As ColouringAlgorithm)
-        Me.Algorithm = algorithm
+        If algorithm Is Nothing Then
+            Throw New ArgumentNullException(NameOf(algorithm))
+        End If
+
+        tAlgorithm = algorithm
+
     End Sub
 
     Public Function GetBitmap(context As ColouringContext) As Bitmap
-        If cachedBitmap Is Nothing Then
-            cachedBitmap = Algorithm.GenerateBitmap(context)
+        If CachedBitmap Is Nothing Then
+            CachedBitmap = Algorithm.GenerateBitmap(context)
         End If
 
-        Return cachedBitmap
+        Return CachedBitmap
 
     End Function
 
     Public Sub Invalidate()
-        If cachedBitmap IsNot Nothing Then
-            cachedBitmap.Dispose()
-            cachedBitmap = Nothing
+        If CachedBitmap IsNot Nothing Then
+            CachedBitmap.Dispose()
+            CachedBitmap = Nothing
         End If
 
     End Sub
 
     Public Sub Dispose() Implements IDisposable.Dispose
         Invalidate()
+
     End Sub
 
 End Class
