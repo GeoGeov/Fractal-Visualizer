@@ -7,6 +7,8 @@
     Add
     Subtract
     Multiply
+
+    'below are optinal extras may not added ub future but here to remind of exitence
     Screen
     Overlay
     Darken

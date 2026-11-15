@@ -16,7 +16,6 @@ Public Class FractalRenderer
     'i want to be private but made public for ease
     Public Property Surface As Bitmap
 
-
     Public Sub New(camera As Camera)
         ViewCamera = camera
     End Sub
@@ -25,11 +24,7 @@ Public Class FractalRenderer
         NeedsFullRedraw = True
     End Sub
 
-    Public Function Update(
-    store As PointStorage,
-    width As Integer,
-    height As Integer
-) As Bitmap
+    Public Function Update(store As PointStorage, width As Integer, height As Integer) As Bitmap
 
         If width <= 0 OrElse height <= 0 Then Return Nothing
 
@@ -57,7 +52,7 @@ Public Class FractalRenderer
         Dim rebuildRequired As Boolean = False
         Dim latestTotal As Long = 0
 
-        Dim changedPoints As List(Of FPoint) =
+        Dim changedPoints As List(Of Fpoint) =
         store.GetChanges(
             LastSeenTotal,
             rebuildRequired,
@@ -68,7 +63,7 @@ Public Class FractalRenderer
 
             Dim snapshotTotal As Long
 
-            Dim allPoints As List(Of FPoint) =
+            Dim allPoints As List(Of Fpoint) =
             store.GetSnapshot(snapshotTotal)
 
             Using g As Graphics = Graphics.FromImage(Surface)
@@ -97,11 +92,7 @@ Public Class FractalRenderer
 
     End Function
 
-    Private Sub PlotPoints(
-        points As List(Of FPoint),
-        width As Integer,
-        height As Integer
-    )
+    Private Sub PlotPoints(points As List(Of Fpoint), width As Integer, height As Integer)
 
         If points Is Nothing OrElse points.Count = 0 Then Return
 
@@ -124,7 +115,7 @@ Public Class FractalRenderer
             Dim centreX As Double = width / 2.0
             Dim centreY As Double = height / 2.0
 
-            For Each p As FPoint In points
+            For Each p As Fpoint In points
                 If p Is Nothing Then Continue For
 
                 Dim sx As Double =

@@ -3,20 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal-visualizer\\fractalvisualizer\\fractalvisualizer\\classes\\fractal control\\colouring utils\\colourcontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\fractal control\\colouring utils\\colourcontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\fractal control\\colouring utils\\colourlayer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\fractal control\\colouring utils\\colourlayer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal-visualizer\\fractalvisualizer\\fractalvisualizer\\classes\\fractal control\\colouring utils\\blendmode.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\fractal control\\colouring utils\\blendmode.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\fractal control\\colouring utils\\colourcontext.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\fractal control\\colouring utils\\colourcontext.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal-visualizer\\fractalvisualizer\\fractalvisualizer\\classes\\fractal control\\fractalrenderer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\fractal control\\fractalrenderer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal-visualizer\\fractalvisualizer\\fractalvisualizer\\classes\\viewutils\\viewport.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\viewutils\\viewport.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal-visualizer\\fractalvisualizer\\fractalvisualizer\\classes\\ui elements\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\ui elements\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal-visualizer\\fractalvisualizer\\fractalvisualizer\\classes\\ui elements\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\ui elements\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\fractal control\\colouring utils\\colouringalgorithms\\functioncolouring.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\fractal control\\colouring utils\\colouringalgorithms\\functioncolouring.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal-visualizer\\fractalvisualizer\\fractalvisualizer\\classes\\viewutils\\camera.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\viewutils\\camera.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\fractal control\\colouring utils\\colouringalgorithms\\iterationcolouring.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\fractal control\\colouring utils\\colouringalgorithms\\iterationcolouring.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\fractal control\\colouring utils\\colouringalgorithms\\densitycolouring.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\fractal control\\colouring utils\\colouringalgorithms\\densitycolouring.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\fractal control\\colouring utils\\colourcontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\fractal control\\colouring utils\\colourcontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal-visualizer\\fractalvisualizer\\fractalvisualizer\\classes\\fractal control\\colouring utils\\colourblender.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\fractal control\\colouring utils\\colourblender.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|c:\\users\\gggeo\\documents\\github\\fractal-visualizer\\fractalvisualizer\\fractalvisualizer\\classes\\fractal control\\colouring utils\\colourlayer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\fractal control\\colouring utils\\colourlayer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\fractal control\\colouring utils\\blendmode.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\fractal control\\colouring utils\\blendmode.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\fractal control\\pointstorage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\fractal control\\pointstorage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\classes\\fractal control\\colouring utils\\colouringalgorithm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\classes\\fractal control\\colouring utils\\colouringalgorithm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\fractalvisualizer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{61BC9D91-31FE-4F56-8730-E51841F60B2C}|FractalVisualizer\\FractalVisualizer.vbproj|solutionrelative:fractalvisualizer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,55 +90,206 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ColourBlender.vb",
-              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourBlender.vb",
-              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourBlender.vb",
-              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourBlender.vb",
-              "RelativeToolTip": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourBlender.vb",
-              "ViewState": "AgIAAAAAAABIaXxkAr0ywAUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Ui Elements\\Form1.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Ui Elements\\Form1.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Ui Elements\\Form1.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Ui Elements\\Form1.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-11-10T10:28:39.378Z",
+              "WhenOpened": "2026-11-13T15:06:19.677Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BlendMode.vb",
-              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\BlendMode.vb",
-              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\BlendMode.vb",
-              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\BlendMode.vb",
-              "RelativeToolTip": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\BlendMode.vb",
-              "ViewState": "AgIAAAQAAACAy7KdRXAdwBEAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Form1.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Ui Elements\\Form1.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Ui Elements\\Form1.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Ui Elements\\Form1.vb [Design]",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Ui Elements\\Form1.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-11-10T10:20:49.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-13T15:06:12.68Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ColourLayer.vb",
-              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourLayer.vb",
-              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourLayer.vb",
-              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourLayer.vb",
-              "RelativeToolTip": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourLayer.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "Title": "Viewport.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\ViewUtils\\Viewport.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\ViewUtils\\Viewport.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\ViewUtils\\Viewport.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\ViewUtils\\Viewport.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-11-10T10:18:40.706Z",
+              "WhenOpened": "2026-11-13T15:03:33.134Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "Camera.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\ViewUtils\\Camera.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\ViewUtils\\Camera.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\ViewUtils\\Camera.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\ViewUtils\\Camera.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-11-13T15:03:30.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FractalRenderer.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\FractalRenderer.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Fractal Control\\FractalRenderer.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\FractalRenderer.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Fractal Control\\FractalRenderer.vb",
+              "ViewState": "AgIAAGgAAAAAAABYLqe1v4EAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-11-13T15:02:43.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ColourControl.vb",
               "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourControl.vb",
               "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourControl.vb",
               "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourControl.vb",
               "RelativeToolTip": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourControl.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvyMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-11-10T10:09:34.661Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ColourContext.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourContext.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourContext.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourContext.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourContext.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-11-12T11:35:49.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ColourLayer.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourLayer.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourLayer.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourLayer.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourLayer.vb",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-11-11T13:01:24.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FunctionColouring.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithms\\FunctionColouring.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithms\\FunctionColouring.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithms\\FunctionColouring.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithms\\FunctionColouring.vb",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-11-12T11:46:23.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ColourBlender.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourBlender.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourBlender.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourBlender.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColourBlender.vb",
+              "ViewState": "AgIAAGIAAAAAANDeVX8lwHcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-11-12T11:40:50.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DensityColouring.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithms\\DensityColouring.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithms\\DensityColouring.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithms\\DensityColouring.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithms\\DensityColouring.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-11-12T11:46:25.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IterationColouring.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithms\\IterationColouring.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithms\\IterationColouring.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithms\\IterationColouring.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithms\\IterationColouring.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-11-12T11:46:22.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BlendMode.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\BlendMode.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\BlendMode.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\BlendMode.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\BlendMode.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-11-12T11:46:20.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PointStorage.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\PointStorage.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Fractal Control\\PointStorage.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\PointStorage.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Fractal Control\\PointStorage.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-11-12T12:24:43.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ColouringAlgorithm.vb",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithm.vb",
+              "RelativeDocumentMoniker": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithm.vb",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithm.vb",
+              "RelativeToolTip": "FractalVisualizer\\Classes\\Fractal Control\\Colouring Utils\\ColouringAlgorithm.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-11-12T11:35:13.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\App.config",
+              "RelativeDocumentMoniker": "FractalVisualizer\\App.config",
+              "ToolTip": "C:\\Users\\gggeo\\Documents\\GitHub\\Fractal-Visualizer\\FractalVisualizer\\FractalVisualizer\\App.config",
+              "RelativeToolTip": "FractalVisualizer\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-11-12T11:46:18.222Z"
             }
           ]
         }

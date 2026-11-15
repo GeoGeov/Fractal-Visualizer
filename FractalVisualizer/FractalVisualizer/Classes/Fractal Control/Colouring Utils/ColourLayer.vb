@@ -1,10 +1,36 @@
 ﻿Public Class ColourLayer
-    'acts as layers in other art programs
-    'will allow for multiple colouring algorithms to be applied to the same fractal, and then blended together
+    Implements IDisposable
+
     Public Property Algorithm As ColouringAlgorithm
+    'normal by default
+    Public Property BlendMode As BlendMode = BlendMode.Normal
+    Public Property Enabled As Boolean = True
 
-    Property Strength As Double = 1.0
-    Property BlendMode As BlendMode
+    Private cachedBitmap As Bitmap
 
-    Property Enabled As Boolean = True
+    Public Sub New(algorithm As ColouringAlgorithm)
+        Me.Algorithm = algorithm
+    End Sub
+
+    Public Function GetBitmap(context As ColouringContext) As Bitmap
+        If cachedBitmap Is Nothing Then
+            cachedBitmap = Algorithm.GenerateBitmap(context)
+        End If
+
+        Return cachedBitmap
+
+    End Function
+
+    Public Sub Invalidate()
+        If cachedBitmap IsNot Nothing Then
+            cachedBitmap.Dispose()
+            cachedBitmap = Nothing
+        End If
+
+    End Sub
+
+    Public Sub Dispose() Implements IDisposable.Dispose
+        Invalidate()
+    End Sub
+
 End Class
